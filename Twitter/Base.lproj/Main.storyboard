@@ -65,12 +65,49 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="IPj-U9-3Pd">
-                                <rect key="frame" x="0.0" y="50" width="414" height="43.666667938232422"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tweetCell" rowHeight="120" id="IPj-U9-3Pd">
+                                <rect key="frame" x="0.0" y="50" width="414" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IPj-U9-3Pd" id="DYa-qf-ZNK">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="InP-gd-DDh">
+                                            <rect key="frame" x="20" y="28" width="65" height="65"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="65" id="7XO-bZ-v22"/>
+                                                <constraint firstAttribute="width" constant="65" id="eUf-s5-ERR"/>
+                                                <constraint firstAttribute="height" constant="65" id="t11-Af-0ov"/>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="65" id="v4e-YH-7nm"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tweet Content" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GMy-61-n8x">
+                                            <rect key="frame" x="93" y="65" width="287" height="55"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="287" id="Ujf-YR-OmW"/>
+                                                <constraint firstAttribute="height" constant="55" id="XEe-n4-cfo"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="John Doe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hxG-dg-kfM">
+                                            <rect key="frame" x="93" y="28" width="77" height="20"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="hxG-dg-kfM" secondAttribute="trailing" constant="188" id="B98-gG-y0A"/>
+                                        <constraint firstItem="hxG-dg-kfM" firstAttribute="top" secondItem="DYa-qf-ZNK" secondAttribute="topMargin" id="JKM-6p-gh6"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="InP-gd-DDh" secondAttribute="bottom" id="QTB-ud-CPL"/>
+                                        <constraint firstItem="GMy-61-n8x" firstAttribute="centerX" secondItem="DYa-qf-ZNK" secondAttribute="centerX" id="Xbt-NL-3R7"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="InP-gd-DDh" secondAttribute="trailing" constant="237" id="cAb-lw-FyY"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="InP-gd-DDh" secondAttribute="trailing" constant="237" id="dP4-WE-bXz"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="hxG-dg-kfM" secondAttribute="bottom" constant="78" id="g88-1K-opb"/>
+                                        <constraint firstItem="GMy-61-n8x" firstAttribute="centerY" secondItem="DYa-qf-ZNK" secondAttribute="centerY" id="odF-yy-2fV"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -89,7 +126,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0aH-jp-MfL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1826" y="108"/>
+            <point key="canvasLocation" x="1824.6376811594205" y="107.8125"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ezG-GC-lj6">
