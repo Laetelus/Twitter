@@ -28,6 +28,9 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Login ">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="35"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="onLoginButton:" destination="oX5-8W-eqL" eventType="touchUpInside" id="GzH-bc-mEm"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="BwX-uG-zBf"/>
@@ -47,7 +50,7 @@
             </objects>
             <point key="canvasLocation" x="21.600000000000001" y="109.29535232383809"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Home-->
         <scene sceneID="aIP-ja-UBJ">
             <objects>
                 <tableViewController id="gRJ-jk-qsu" sceneMemberID="viewController">
@@ -70,7 +73,7 @@
                             <outlet property="delegate" destination="gRJ-jk-qsu" id="yqM-df-rHD"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="TYn-Cd-kmn"/>
+                    <navigationItem key="navigationItem" title="Home" id="TYn-Cd-kmn"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0aH-jp-MfL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
