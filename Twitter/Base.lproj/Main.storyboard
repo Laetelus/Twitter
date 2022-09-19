@@ -65,15 +65,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tweetCell" rowHeight="120" id="IPj-U9-3Pd" customClass="TweetCellTableViewCell" customModule="Twitter" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="50" width="414" height="120"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tweetCell" rowHeight="130" id="IPj-U9-3Pd" customClass="TweetCellTableViewCell" customModule="Twitter" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="50" width="414" height="130"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IPj-U9-3Pd" id="DYa-qf-ZNK">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="130"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="InP-gd-DDh">
-                                            <rect key="frame" x="20" y="28" width="65" height="65"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="InP-gd-DDh">
+                                            <rect key="frame" x="20" y="22" width="85" height="86"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="65" id="7XO-bZ-v22"/>
                                                 <constraint firstAttribute="width" constant="65" id="eUf-s5-ERR"/>
@@ -81,30 +81,37 @@
                                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="65" id="v4e-YH-7nm"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="John Doe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hxG-dg-kfM">
-                                            <rect key="frame" x="93" y="28" width="77" height="20"/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tweet Content" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GMy-61-n8x">
+                                            <rect key="frame" x="113" y="79" width="357.66666666666663" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" relation="lessThanOrEqual" constant="374" id="BbM-Lb-dtV"/>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="Q6T-we-yCy"/>
+                                                <constraint firstAttribute="height" constant="55" id="XEe-n4-cfo"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tweet Content" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GMy-61-n8x">
-                                            <rect key="frame" x="93" y="44" width="287" height="76"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Doe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hxG-dg-kfM">
+                                            <rect key="frame" x="113" y="22" width="104" height="30"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="287" id="Ujf-YR-OmW"/>
-                                                <constraint firstAttribute="height" constant="55" id="XEe-n4-cfo"/>
+                                                <constraint firstAttribute="height" constant="30" id="EKI-t8-Rnx"/>
+                                                <constraint firstAttribute="width" constant="104" id="N3Y-s2-0LP"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="GMy-61-n8x" firstAttribute="top" secondItem="hxG-dg-kfM" secondAttribute="bottom" constant="4" id="03n-DF-JAI"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="GMy-61-n8x" secondAttribute="trailing" constant="-93" id="0Xr-mi-YAl"/>
+                                        <constraint firstItem="GMy-61-n8x" firstAttribute="leading" secondItem="hxG-dg-kfM" secondAttribute="leading" id="3p8-XL-SoB"/>
+                                        <constraint firstItem="hxG-dg-kfM" firstAttribute="top" secondItem="DYa-qf-ZNK" secondAttribute="topMargin" id="5u5-FK-L0W"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="hxG-dg-kfM" secondAttribute="trailing" constant="188" id="B98-gG-y0A"/>
                                         <constraint firstItem="hxG-dg-kfM" firstAttribute="top" secondItem="DYa-qf-ZNK" secondAttribute="topMargin" id="JKM-6p-gh6"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="InP-gd-DDh" secondAttribute="bottom" id="QTB-ud-CPL"/>
-                                        <constraint firstItem="GMy-61-n8x" firstAttribute="centerX" secondItem="DYa-qf-ZNK" secondAttribute="centerX" id="Xbt-NL-3R7"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="InP-gd-DDh" secondAttribute="trailing" constant="237" id="cAb-lw-FyY"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="InP-gd-DDh" secondAttribute="trailing" constant="237" id="dP4-WE-bXz"/>
+                                        <constraint firstItem="hxG-dg-kfM" firstAttribute="leading" secondItem="InP-gd-DDh" secondAttribute="trailing" constant="8" id="VJf-Sb-AHX"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="hxG-dg-kfM" secondAttribute="bottom" constant="78" id="g88-1K-opb"/>
                                         <constraint firstItem="GMy-61-n8x" firstAttribute="centerY" secondItem="DYa-qf-ZNK" secondAttribute="centerY" id="odF-yy-2fV"/>
                                     </constraints>
