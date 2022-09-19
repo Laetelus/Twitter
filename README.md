@@ -25,7 +25,6 @@ Here's a walkthrough of implemented user stories:
 
 <img src='https://media.giphy.com/media/UzoRzjvACwYBtFigxr/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-
-https://user-images.githubusercontent.com/72906227/191070457-e7fdda70-004c-4945-b1f1-d624c66a4842.mov
+https://user-images.githubusercontent.com/72906227/191071026-c2c109b2-6e7e-44a1-8555-8b160ed13a9f.mov
 
 
