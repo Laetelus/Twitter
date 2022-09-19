@@ -23,5 +23,4 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-[![Watch the video](https://youtu.be/vt5fpE0bzSY](https://youtu.be/yrqYZa7G-qw)]
-
+[![Video](https://img.youtube.com/vi/jXnoFqcAkQA/maxresdefault.jpg)](https://www.youtube.com/watch?v=jXnoFqcAkQA)
