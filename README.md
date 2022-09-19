@@ -23,4 +23,4 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src="https://kapwi.ng/w/mqxKVV4-0E" title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src= https://kapwi.ng/w/mqxKVV4-0E title='Video Walkthrough' width='' alt='Video Walkthrough' />
