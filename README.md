@@ -23,4 +23,4 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src="https://gfycat.com/indolentpalatablebobolink" title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src="<iframe src='https://gfycat.com/ifr/IndolentPalatableBobolink' frameborder='0' scrolling='no' allowfullscreen width='640' height='1344'></iframe>" title='Video Walkthrough' width='' alt='Video Walkthrough' />
