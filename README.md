@@ -23,6 +23,5 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<video src='https://www.kapwing.com/videos/63286e2ec524da00be8a373e' width=180/>
+<video src='https://youtu.be/yrqYZa7G-qw' width=180/>
 
-<img src= "https://www.kapwing.com/videos/63286e2ec524da00be8a373e" title='Video Walkthrough' width='' alt='Video Walkthrough' />
