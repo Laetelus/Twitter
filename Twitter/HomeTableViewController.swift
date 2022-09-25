@@ -23,6 +23,11 @@ class HomeTableViewController: UITableViewController {
 
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.loadTweet()
+    }
+    
     @objc func loadTweet(){
         
         let Myurl = "https://api.twitter.com/1.1/statuses/home_timeline.json"
